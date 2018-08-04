@@ -1,0 +1,12 @@
+emizimpro_frontend:
+    resource: "@EmizimproFrontendBundle/Resources/config/routing.yml"
+    prefix:   /
+
+emizimpro_backend:
+    resource: "@EmizimproBackendBundle/Resources/config/routing.yml"
+    prefix:   /Admin
+
+
+#app:
+#    resource: "@AppBundle/Controller/"
+#    type:     annotation

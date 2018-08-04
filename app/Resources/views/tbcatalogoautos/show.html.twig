@@ -1,0 +1,92 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Tbcatalogoauto</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ tbCatalogoAuto.id }}</td>
+            </tr>
+            <tr>
+                <th>Archivofabrica</th>
+                <td>{{ tbCatalogoAuto.archivoFabrica }}</td>
+            </tr>
+            <tr>
+                <th>Descripcion</th>
+                <td>{{ tbCatalogoAuto.descripcion }}</td>
+            </tr>
+            <tr>
+                <th>Img1</th>
+                <td>{{ tbCatalogoAuto.img1 }}</td>
+            </tr>
+            <tr>
+                <th>Img2</th>
+                <td>{{ tbCatalogoAuto.img2 }}</td>
+            </tr>
+            <tr>
+                <th>Img3</th>
+                <td>{{ tbCatalogoAuto.img3 }}</td>
+            </tr>
+            <tr>
+                <th>Img4</th>
+                <td>{{ tbCatalogoAuto.img4 }}</td>
+            </tr>
+            <tr>
+                <th>Ctipo</th>
+                <td>{{ tbCatalogoAuto.cTipo }}</td>
+            </tr>
+            <tr>
+                <th>Cmodelo</th>
+                <td>{% if tbCatalogoAuto.cModelo %}{{ tbCatalogoAuto.cModelo|date('Y-m-d') }}{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Ccilindro</th>
+                <td>{{ tbCatalogoAuto.cCilindro }}</td>
+            </tr>
+            <tr>
+                <th>Ctransmision</th>
+                <td>{{ tbCatalogoAuto.cTransmision }}</td>
+            </tr>
+            <tr>
+                <th>Cconbustible</th>
+                <td>{{ tbCatalogoAuto.cConbustible }}</td>
+            </tr>
+            <tr>
+                <th>Caros</th>
+                <td>{{ tbCatalogoAuto.cAros }}</td>
+            </tr>
+            <tr>
+                <th>Cequipo</th>
+                <td>{{ tbCatalogoAuto.cEquipo }}</td>
+            </tr>
+            <tr>
+                <th>Fregistro</th>
+                <td>{% if tbCatalogoAuto.fRegistro %}{{ tbCatalogoAuto.fRegistro|date('Y-m-d H:i:s') }}{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Publicarencatalogo</th>
+                <td>{% if tbCatalogoAuto.publicarEnCatalogo %}Yes{% else %}No{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Enabled</th>
+                <td>{% if tbCatalogoAuto.enabled %}Yes{% else %}No{% endif %}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('tbcatalogoautos_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('tbcatalogoautos_edit', { 'id': tbCatalogoAuto.id }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}

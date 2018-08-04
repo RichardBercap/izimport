@@ -1,0 +1,69 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Tbcatalogoautos list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Archivofabrica</th>
+                <th>Descripcion</th>
+                <th>Img1</th>
+                <th>Img2</th>
+                <th>Img3</th>
+                <th>Img4</th>
+                <th>Ctipo</th>
+                <th>Cmodelo</th>
+                <th>Ccilindro</th>
+                <th>Ctransmision</th>
+                <th>Cconbustible</th>
+                <th>Caros</th>
+                <th>Cequipo</th>
+                <th>Fregistro</th>
+                <th>Publicarencatalogo</th>
+                <th>Enabled</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for tbCatalogoAuto in tbCatalogoAutos %}
+            <tr>
+                <td><a href="{{ path('tbcatalogoautos_show', { 'id': tbCatalogoAuto.id }) }}">{{ tbCatalogoAuto.id }}</a></td>
+                <td>{{ tbCatalogoAuto.archivoFabrica }}</td>
+                <td>{{ tbCatalogoAuto.descripcion }}</td>
+                <td>{{ tbCatalogoAuto.img1 }}</td>
+                <td>{{ tbCatalogoAuto.img2 }}</td>
+                <td>{{ tbCatalogoAuto.img3 }}</td>
+                <td>{{ tbCatalogoAuto.img4 }}</td>
+                <td>{{ tbCatalogoAuto.cTipo }}</td>
+                <td>{% if tbCatalogoAuto.cModelo %}{{ tbCatalogoAuto.cModelo|date('Y-m-d') }}{% endif %}</td>
+                <td>{{ tbCatalogoAuto.cCilindro }}</td>
+                <td>{{ tbCatalogoAuto.cTransmision }}</td>
+                <td>{{ tbCatalogoAuto.cConbustible }}</td>
+                <td>{{ tbCatalogoAuto.cAros }}</td>
+                <td>{{ tbCatalogoAuto.cEquipo }}</td>
+                <td>{% if tbCatalogoAuto.fRegistro %}{{ tbCatalogoAuto.fRegistro|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>{% if tbCatalogoAuto.publicarEnCatalogo %}Yes{% else %}No{% endif %}</td>
+                <td>{% if tbCatalogoAuto.enabled %}Yes{% else %}No{% endif %}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('tbcatalogoautos_show', { 'id': tbCatalogoAuto.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('tbcatalogoautos_edit', { 'id': tbCatalogoAuto.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('tbcatalogoautos_new') }}">Create a new tbCatalogoAuto</a>
+        </li>
+    </ul>
+{% endblock %}
