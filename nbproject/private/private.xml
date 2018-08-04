@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="7">
+        <file>
+            <url>src/Emizimpro/BackendBundle/Resources/views/tbautoscatalogo/index.html.twig</url>
+            <bookmark id="5">
+                <name/>
+                <line>0</line>
+                <key/>
+            </bookmark>
+            <bookmark id="4">
+                <name/>
+                <line>0</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>src/Emizimpro/BackendBundle/Resources/views/tbcatalogoautos/index.html.twig</url>
+            <bookmark id="7">
+                <name/>
+                <line>72</line>
+                <key/>
+            </bookmark>
+            <bookmark id="6">
+                <name/>
+                <line>1683</line>
+                <key/>
+            </bookmark>
+        </file>
+        <file>
+            <url>src/Emizimpro/BackendBundle/Resources/views/tbautos/index.html.twig</url>
+            <bookmark id="2">
+                <name/>
+                <line>439</line>
+                <key/>
+            </bookmark>
+            <bookmark id="3">
+                <name/>
+                <line>975</line>
+                <key/>
+            </bookmark>
+        </file>
+    </editor-bookmarks>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/wamp/www/Izimpro/src/Emizimpro/BackendBundle/Resources/views/LayoutAdmin/viewCategorias.html.twig</file>
+            <file>file:/C:/wamp/www/Izimpro/src/Emizimpro/BackendBundle/Resources/config/routing.yml</file>
+            <file>file:/C:/wamp/www/Izimpro/src/Emizimpro/BackendBundle/Controller/DefaultController.php</file>
+            <file>file:/C:/wamp/www/Izimpro/src/Emizimpro/BackendBundle/Entity/TbSubtipoAutos.php</file>
+            <file>file:/C:/wamp/www/Izimpro/src/Emizimpro/BackendBundle/Resources/views/LayoutAdmin/viewSubTipoAutos.html.twig</file>
+            <file>file:/C:/wamp/www/Izimpro/src/Emizimpro/BackendBundle/Entity/TbPais.php</file>
+            <file>file:/C:/wamp/www/Izimpro/src/Emizimpro/BackendBundle/Entity/TbTipoDisponiPais.php</file>
+            <file>file:/C:/wamp/www/Izimpro/src/Emizimpro/BackendBundle/Entity/TbTipoAutos.php</file>
+            <file>file:/C:/wamp/www/Izimpro/src/Emizimpro/BackendBundle/Resources/views/LayoutAdmin/layout.html.twig</file>
+            <file>file:/C:/wamp/www/Izimpro/composer.json</file>
+        </group>
+    </open-files>
+</project-private>
